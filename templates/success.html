@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+
+    <div id="contenedor" class="sc-99ihez-3 igtmUY"><h1 format="basic" size="300" class="sc-jrQzAO hlRWJa sc-crHmcD lkBFXi sc-7dl9yw-2 difelG">Full-body Workout</h1><p format="basic" size="300" class="sc-jrQzAO hlRWJa sc-bqiRlB hwnhaP sc-7dl9yw-3 ldIyzc">Start training all your body</p><button id="start-watching" format="primary" class="sc-hKwDye blmfgH sc-99ihez-2 hODupQ"><svg viewBox="0 0 20 20" style="height: 1.125rem;color:white; width: 1.125rem; margin-right: 0.25rem;"><path d="M4 18a1 1 0 0 1-1-1V3a1 1 0 0 1 1.5-.86l12 7a1 1 0 0 1 0 1.72l-12 7A1 1 0 0 1 4 18zM5 4.74v10.52L14 10z" fill="white"></path></svg><span class="sc-dkPtRN kCZHJF">Start watching</span><div radius="10" class="sc-eCImPb hMpQGV"></div></button></div>
+
+<script>
+    document.addEventListener("DOMContentLoaded",function(){
+        document.getElementById("start-watching").addEventListener("click",function(){
+            window.location.href = "{% url 'playlist' %}";
+        })
+    })
+</script>
+
+
+<style>
+
+    #contenedor{
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+    h1{
+        
+        color: black;
+        padding: 10px;
+        font-weight: bold;
+        font-size: 50px;
+        font-family: "Poppins", sans-serif;
+    }
+    button{
+        background-color: #00ADEF;
+        padding: 6px;
+        border: none;
+    }
+    p,span{
+        color: black;
+        font-family: "Poppins", sans-serif;
+        font-weight: bold;
+    }
+</style>
+
+
+{% endblock %}

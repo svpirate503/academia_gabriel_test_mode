@@ -1,0 +1,169 @@
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+
+
+
+
+header{
+    background-color: black;
+    padding: 8px;
+    margin: 0;
+
+}
+
+header img{
+  margin: 0;
+  padding: 0;
+}
+
+.barra-principal{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-principal li{
+    list-style: none;
+    padding: 10px;
+}
+
+.barra-principal > li >a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Condensed';
+    padding: 10px;
+}
+
+.barra-principal > li >a:hover{
+    background-color: green;
+    color: white;
+    transition: 0.5s;
+}
+
+#burguer{
+    color: white;
+    font-size: 25px;
+    display: none;
+}
+
+
+.barra-movil{
+    width: 0px;
+    background-color: white;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 0.6s;
+
+}
+
+.barra-movil a{
+    text-decoration: none;
+    font-family: 'Roboto Condensed';
+
+    padding: 10px;
+    font-size: 20px;
+}
+
+.barra-movil a:hover{
+    scale: 1.05;
+    transition: 0.6s;
+}
+
+#home{
+    position: relative;
+    top: 20px;
+    right: 40px;
+}
+
+#planes{
+    position: relative;
+    top: 30px;
+    right: 40px;
+
+}
+
+#contacto{
+    position: relative;
+    top: 30px;
+    right: 40px;
+
+}
+
+#about-me{
+    position: relative;
+    top: 30px;
+    right: 45px;
+
+}
+
+.about{
+    margin-left: 5px;
+}
+
+.x{
+    position: relative;
+    left: 110px;
+    font-size: 30px;
+}
+@media(max-width:600px){
+
+    .barra-principal{
+        display: none;
+    }
+
+    header img{
+        width: 300px;
+    }
+    header{
+        padding: 55px;
+    }
+    #burguer{
+        display: block;
+    }
+
+}
+
+
+
+
+
+
+
+.contenedor{
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    padding: 30px;
+}
+
+.contenedor p{
+    color: white;
+}
+
+
+@media(max-width:600px){
+    .contenedor{
+        position: relative;
+    }
+}

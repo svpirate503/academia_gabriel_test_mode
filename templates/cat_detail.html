@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/cat_detail.css' %}" type="text/css">
+
+<div class="container">
+    <h1 class="category-title">Hacking etico</h1>
+    <div class="gallery">
+          
+        
+           
+        
+           
+        
+          
+        
+          
+       {% for post in posts %}
+        <div class="foto">
+            <a href="{% url 'video' post.id %}">
+            <img src="{{post.thumbnail.url}}" alt="" width="300">
+            <p>{{post.nombre}}</p>
+            </a>
+
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}

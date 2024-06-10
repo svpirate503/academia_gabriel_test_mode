@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/contact.css' %}" type="text/css">
+
+<div class="contacto">
+    <form method="post">
+        {% csrf_token %}
+        <div class="campo">
+            <label for="name">Nombre</label>
+        <input type="text" name="name" id="name">
+
+        </div>
+        <div class="campo">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email">
+
+
+        </div>
+
+        <div class="campo">
+            <label for="number">Phone</label>
+            <input type="tel" name="number" id="number">
+
+        </div>
+
+        <div class="campo">
+            <textarea></textarea>
+
+        </div>
+
+        <div class="campo">
+            <input type="submit" value="Enviar">
+
+
+        </div>
+        
+       
+       
+        
+
+
+    </form>
+</div>
+
+
+
+{% endblock %}
+
+
+

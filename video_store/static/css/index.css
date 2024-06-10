@@ -1,0 +1,54 @@
+
+
+
+
+body{
+    background-image: url('../images/fondo.png') !important;
+    background-position: center center;
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    height: 100vh;
+}
+@media (max-width: 768px) {
+    body {
+      background-attachment: scroll; /* Ensures compatibility and performance on mobile */
+    }
+  }
+
+
+  .text-center h1{
+    text-transform: uppercase;
+  }
+
+  .tucuerpo{
+    color: yellow;
+  }
+#inscribete{
+    text-transform: uppercase;
+
+
+}
+
+
+  
+
+
+.responsive-video{
+  position: relative;
+  max-width:800px;
+  margin: auto;
+  bottom: 20px;
+
+  
+}
+.c{
+  margin: 20px;
+}
+.responsive-video iframe{
+  width: 100%;
+  height: 50vh;
+
+ 
+}

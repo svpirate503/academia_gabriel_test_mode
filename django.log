@@ -1,0 +1,163 @@
+Watching for file changes with StatReloader
+"GET /home/ HTTP/1.1" 200 1235
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 57167)
+"POST /create-checkout-session/ HTTP/1.1" 302 0
+"GET /success?session_id=cs_test_a1IWVpE1kLOYntJ6MO3GjLapQrZa8LGwYDQ9q16wUdwIkubWFWZ2agKNcz HTTP/1.1" 301 0
+"GET /success/?session_id=cs_test_a1IWVpE1kLOYntJ6MO3GjLapQrZa8LGwYDQ9q16wUdwIkubWFWZ2agKNcz HTTP/1.1" 200 11005
+"GET /static/css/dist/styles.css?v=1712940594 HTTP/1.1" 200 35089
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /home/ HTTP/1.1" 200 1235
+Forbidden: /create-checkout-session/
+"POST /create-checkout-session/ HTTP/1.1" 403 178
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-checkout-session/
+Traceback (most recent call last):
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view video_store.views.create_checkout_session didn't return an HttpResponse object. It returned None instead.
+"POST /create-checkout-session/ HTTP/1.1" 500 68516
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 57317)
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-checkout-session/
+Traceback (most recent call last):
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view video_store.views.create_checkout_session didn't return an HttpResponse object. It returned None instead.
+"POST /create-checkout-session/ HTTP/1.1" 500 68516
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 57327)
+Internal Server Error: /create-checkout-session/
+Traceback (most recent call last):
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view video_store.views.create_checkout_session didn't return an HttpResponse object. It returned None instead.
+"POST /create-checkout-session/ HTTP/1.1" 500 68516
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-checkout-session/
+Traceback (most recent call last):
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\video_store\views.py", line 45, in create_checkout_session
+    checkout_session = stripe.Subscription.create(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_subscription.py", line 2351, in create
+    cls._static_request(
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_resource.py", line 177, in _static_request
+    return _APIRequestor._global_instance().request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_requestor.py", line 196, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_requestor.py", line 732, in _interpret_response
+    self.handle_error_response(rbody, rcode, resp.data, rheaders)
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_requestor.py", line 321, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_QdR8gVnDfvbV5o: Missing required param: customer.
+"POST /create-checkout-session/ HTTP/1.1" 500 100612
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+Internal Server Error: /create-checkout-session/
+Traceback (most recent call last):
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\video_store\views.py", line 45, in create_checkout_session
+    checkout_session = stripe.Subscription.create(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_subscription.py", line 2351, in create
+    cls._static_request(
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_resource.py", line 177, in _static_request
+    return _APIRequestor._global_instance().request(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_requestor.py", line 196, in request
+    resp = requestor._interpret_response(rbody, rcode, rheaders)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_requestor.py", line 732, in _interpret_response
+    self.handle_error_response(rbody, rcode, resp.data, rheaders)
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\stripe\_api_requestor.py", line 321, in handle_error_response
+    raise err
+stripe._error.InvalidRequestError: Request req_P7S2b2w2wrRfNq: No such customer: 'lonan2444@gmail.com'
+"POST /create-checkout-session/ HTTP/1.1" 500 101072
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /home/ HTTP/1.1" 200 1305
+"GET /static/js/main.js HTTP/1.1" 200 663
+"GET /config HTTP/1.1" 301 0
+"GET /config/ HTTP/1.1" 200 124
+Not Found: /favicon.ico
+- Broken pipe from ('127.0.0.1', 57490)
+"POST /create-checkout-session/ HTTP/1.1" 200 83
+"GET / HTTP/1.1" 200 13200
+"GET /static/css/index.css HTTP/1.1" 304 0
+"GET /static/css/dist/styles.css?v=1712941674 HTTP/1.1" 200 35089
+"GET /home/ HTTP/1.1" 200 1305
+"GET /static/js/main.js HTTP/1.1" 200 761
+"GET /config/ HTTP/1.1" 200 124
+- Broken pipe from ('127.0.0.1', 57495)
+"POST /create-checkout-session/ HTTP/1.1" 200 83
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /home/ HTTP/1.1" 200 1305
+"GET /static/js/main.js HTTP/1.1" 304 0
+"GET /config/ HTTP/1.1" 200 124
+- Broken pipe from ('127.0.0.1', 57545)
+Internal Server Error: /create-checkout-session/
+Traceback (most recent call last):
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 204, in _get_response
+    self.check_response(response, callback)
+  File "C:\Users\gabri\Documents\academia_gabriel\env\Lib\site-packages\django\core\handlers\base.py", line 332, in check_response
+    raise ValueError(
+ValueError: The view video_store.views.create_checkout_session didn't return an HttpResponse object. It returned None instead.
+"POST /create-checkout-session/ HTTP/1.1" 500 68516
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+"POST /create-checkout-session/ HTTP/1.1" 200 65
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+"GET /home/ HTTP/1.1" 200 1305
+"GET /static/js/main.js HTTP/1.1" 304 0
+"GET /config/ HTTP/1.1" 200 124
+"POST /create-checkout-session/ HTTP/1.1" 200 83
+- Broken pipe from ('127.0.0.1', 57564)
+"GET /home/ HTTP/1.1" 200 1305
+"GET /static/js/main.js HTTP/1.1" 200 781
+Not Found: /home/{% url 'config' %}
+"GET /home/%7B%%20url%20'config'%20%%7D HTTP/1.1" 404 5452
+"POST /create-checkout-session/ HTTP/1.1" 200 83
+"POST /create-checkout-session/ HTTP/1.1" 200 83
+C:\Users\gabri\Documents\academia_gabriel\video_store\views.py changed, reloading.
+Watching for file changes with StatReloader
+C:\Users\gabri\Documents\academia_gabriel\academia_gabriel\settings.py changed, reloading.

@@ -1,0 +1,226 @@
+{% load static tailwind_tags %}
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">            <title>Galería de Videos Responsive</title>
+
+  <title>Tu Curso</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="{% static 'course_detail.css' %}">
+  <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+  <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+  {% tailwind_css %}
+  <style>
+    .toggle {
+      display: none;
+    }
+  </style>
+</head>
+
+
+
+<body class="bg-gray-100">
+  <div class="min-h-full">
+  
+  
+    <header class="bg-white shadow">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+       <!-- <h1 class="text-3xl font-bold tracking-tight text-gray-900">{{curso.name}}</h1> <a href="#"><span><i id="flecha" class="fa-solid fa-right-long"></i> next lesson</span></a>-->
+      </div>
+    </header>
+    <main>
+      <div id="content" class="mx-auto max-w-7xl py-6 sm:px-6 lg:px-8">
+        <h2 id="video-title" class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Ejemplo</h2>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/940022889?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Diseño sin título(1)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>      </div>
+     
+    </main>
+  </div>
+ 
+  <!-- Barra de navegación -->
+  <nav class="bg-blue-600 p-4 text-white">
+    <!-- Contenido de la barra de navegación -->
+  </nav>
+
+  <!-- Contenedor principal -->
+  <div class="container mx-auto mt-8">
+
+    <!-- Sección del curso -->
+    <section class="bg-white p-8 rounded shadow-md">
+      <h2 class="text-3xl font-bold mb-4">Self-haircut</h2>
+
+      <!-- Lista de capítulos -->
+      <ul class="divide-y divide-gray-300">
+        <!-- Capítulo 1 -->
+
+        <li class="py-4">
+          <div class="flex items-center justify-between cursor-pointer" onclick="toggleLessons('cap_')">
+            <h3 class="text-xl font-bold">Capítulo 1: Introduccion</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              class="h-5 w-5 transform" id="arrow">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <!-- Lista de lecciones (inicialmente oculta) -->
+          <ul id="cap_" class="toggle pl-4">
+
+            <li id="leccion-titulo" class="lecciones" onclick='playVideo(`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/943415773?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="quemaquinacomprar"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,"Que maquina comprar?");'>
+
+            <p class="mt-1 text-lg leading-8 text-gray-600"><i style="margin: 5px;" class="fa-solid fa-play"></i>Que maquina comprar?</p>
+            </li>
+            <li class="lecciones" onclick='playVideo(`<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/943420380?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2024-05-06 15-35-44 (Copy)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>`,"Peines de la maquina");'>
+                <p class="mt-1 text-lg leading-8 text-gray-600"><i style="margin: 5px;" class="fa-solid fa-play"></i>Peines de la maquina</p>
+
+
+
+            </li>
+
+
+            <!-- Agrega más lecciones según sea necesario -->
+          </ul>
+        </li>
+
+    
+        <!-- Agrega más capítulos según sea necesario -->
+
+      </ul>
+
+
+      <!-- Extra chapters -->
+
+
+
+      <ul class="divide-y divide-gray-300">
+        <!-- Capítulo 1 -->
+
+        <li class="py-4">
+          <div class="flex items-center justify-between cursor-pointer" onclick="toggleLessons('cap_2')">
+            <h3 class="text-xl font-bold">Capítulo 1: Introduccion</h3>
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+              class="h-5 w-5 transform" id="arrow">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+          <!-- Lista de lecciones (inicialmente oculta) -->
+          <ul id="cap_2" class="toggle pl-4">
+
+            <a href=""><p class="mt-1 text-lg leading-8 text-gray-600"><i style="margin: 5px;" class="fa-solid fa-play"></i>Que maquina?</p></a>
+
+            <!-- Agrega más lecciones según sea necesario -->
+          </ul>
+        </li>
+
+    
+        <!-- Agrega más capítulos según sea necesario -->
+
+      </ul>
+
+
+
+
+      <!-- End -->
+    </section>
+
+  </div>
+
+  <script>
+    function toggleLessons(chapterId) {
+      const lessons = document.getElementById(chapterId);
+      lessons.classList.toggle('toggle');
+
+      const arrow = document.getElementById('arrow' + chapterId.substr(-1));
+      arrow.classList.toggle('rotate-180');
+    }
+
+    function playVideo(newIframeHTML,lecciontitle) {
+    const videoContainer = document.querySelector('#content');
+    videoContainer.innerHTML = newIframeHTML;
+    const titulo = document.getElementById('video-title');
+    titulo.textContent = lecciontitle;
+   
+}
+    
+  </script>
+
+</body>
+</html>
+
+
+  
+
+
+
+<script>
+const titles = document.querySelectorAll('#clickable');
+
+titles.forEach(title => {
+  title.addEventListener('click', () => {
+    const subtitles = title.nextElementSibling.querySelectorAll("p");
+    subtitles.forEach(subtitle => {
+
+        if(subtitle.style.display === 'none' || subtitle.style.display === ''){
+            subtitle.style.display = 'block';
+        }else{
+            subtitle.style.display = 'none';
+        }
+    });
+  });
+});
+
+</script>
+<style>
+  body{
+    padding: 0px;
+    margin: 0px;
+  }
+
+    .lecciones{
+        cursor: pointer;
+    }
+
+    @media screen and(max-width:638px){
+        #content{
+            justify-content: center;
+        }
+    }
+
+.subtitles p{
+    display: none;
+
+}
+#contenido{
+    color: rgb(47, 211, 211);
+    margin-bottom: 10px;
+}
+#clickable{
+    font-weight: normal;
+    color: black;
+    flex:1;;
+    max-width:60rem;
+    text-decoration: underline;
+}
+
+#content{
+    box-shadow: 2px,2px,2px,2px rgba(0, 0,0,0.5);
+    font-family: var(--font-stack-text);
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    color: #2d2f31;
+}
+</style>
+
+
+
+
+
+
+
+
